@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Data Structure</title>
+    <meta charset="utp-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="duck.png">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Titillium+Web|Bree+Serif|Dosis|Jaldi|Fredoka+One|Indie+Flower|Neucha|Ruda|Sanchez|Unica+One&display=swap" rel="stylesheet">
+    <!-- circle button -->
+        <link href="../_shared/demo.css" rel="stylesheet" type="text/css">
+      	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+        <script>
+          function init() {
+            var stage = new createjs.Stage("demoCanvas");
+
+            var circle1 = new createjs.Shape();
+            circle1.graphics.beginFill("red").drawCircle(0, 0, 10);
+            circle1.x = 100;
+            circle1.y = 100;
+
+            circle1.on("click", function() {
+              alert("Good~ Keep going!");
+            });
+
+            var circle2 = new createjs.Shape();
+            circle2.graphics.beginFill("blue").drawCircle(30, 0, 10);
+            circle2.x = 100;
+            circle2.y = 100;
+
+            circle2.on("click", function() {
+              alert("Try again!");
+            });
+
+            stage.addChild(circle1);
+            stage.addChild(circle2);
+            stage.update();
+          }
+        </script>
+        <!-- circle button -->
+  </head>
+  <body onload="init();">
+  
+    <div id="grid">
+      <div id="side">
+        <!-- music -->
+        <audio autoplay controls> <source src="music.mp3" type="audio/mp3"> </audio>
+        <!-- music -->
+        <h5 id="side_title">Contents</h5>
+        <h3><a id="above_line_space" href="basics.html">1. Basics</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar">What is Data Structure?</p>
+        <div id="line"></div>
+        <p id="mar">Characteristics of Data Structure</p>
+        <div id="line"></div>
+        <p id="mar">Why do we need Data Structure?</p>
+        <div id="line"></div>
+        <p id="mar">Classification of Data Structure</h4>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="types.html">2. Types</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar"><a href="#2_1">Array</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#2_2">Linked-List</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#2_3">Stack</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#2_4">Queue</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#2_5">Tree</a></p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Tree</p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Search Tree</p>
+        <div id="line"></div>
+        <p id="mar"><a href="#2_6">Graph</a></p>
+        <div id="line"></div>
+      </h4>
+        <h3><a id="above_line_space" href="utilization.html">3. Utilization</a></h3>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="quiz.html">4. Quiz</a></h3>
+        <div id="line"></div>
+        <h5 id="side_title2">Contact</h5>
+        <div id="cry">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/71/d8/71d803fcaf5188b067e8bb0213376deed02a9515db1d90e19ce80049fa6e2add_v1.jpg" width="100" height="100" style="width:100px;">
+        </div>
+        <div>
+        <p id="intro">"Ogu !!! <br>I have some questions.<br> But how can I ask it?""</p>
+        </div>
+        </div>
+        <p id="intro">Don't worry. I'll provide you the<br> way you can contact me.</p>
+        <div id="information">
+        <p id="infor">TEL1. 010-5837-5566</p>
+        <p id="infor">TEL2. 02-3436-1445</p>
+        <p id="infor">e-mail. neonjinny@naver.com</p>
+        <p id="infor">kakao-talk. neonjinny</p>
+        </div>
+        <img id="shutter" src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/2f/25/2f2581483293c71e7d689e51cf0d893c5bfd392c64b27ec9615406896811a349_v1.jpg" width="350" height="350" style="width:350px;">
+      </div>
+      <div id="right_part">
+        <p id="orange_line">Multimedia for Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
+
+<button class="hbutton" onclick="location.href='main.html'">home</button>
+</p>
+        <h2 id="subpage_title">2. Types</h2>
+        <div id="grid_char">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/a4/3e/a43e9bf7d0fb8266b827c204fca01e5eca3c874ee08c753e67e645bc87db48f6_v1.jpg" width="300" height="300" style="width:300px;">
+        </div>
+        <div>
+          <h3 id="say"> Welcome to the highlight of Data Structure!<br>
+          In this page, you will learn about each type of Data Structure.<br>
+          These are quite important contents, so please focus on it!<br>
+          <br>Let's start!
+          <br>Boom Boom ~~</h3>
+        </div>
+        </div>
+        <h3 id="long_title"><a name="2_1">Array</a></h3>
+        <p id="para">&nbsp;An array is collection of items stored at contiguous memory locations. The idea is to store multiple items of same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
+<br><br>&nbsp;For simplicity, we can think of an array a fleet of stairs where on each step is placed a value (let’s say one of your friends). Here, you can identify the location of any of your friends by simply knowing the count of the step they are on.
+Remember: “Location of next index depends on the data type we use”.
+<br><br>
+<img src="array1.png" style="width:600px;">
+<br><br>&nbsp;The above image can be looked as a top-level view of a staircase where you are at the base of staircase. Each element can be uniquely identified by their index in the array (in a similar way as you could identify your friends by the step on which they were on in the above example).
+<br><br>&nbsp;Types of indexing in array: <br>
+1) 0 (zero-based indexing)<br> &nbsp;The first element of the array is indexed by subscript of 0<br>
+2) 1 (one-based indexing)<br> &nbsp;The first element of the array is indexed by subscript of 1<br>
+3) n (n-based indexing)<br> &nbsp;The base index of an array can be freely chosen. Usually programming languages allowing n-based indexing also allow negative index values and other scalar data types like enumerations, or characters may be used as an array index.
+<img src="array2.png" style="width:600px;">
+<br><br>&nbsp;Advantages of using arrays:
+<br>1) Arrays allow random access of elements. This makes accessing elements by position faster.
+<br>2) Arrays have better cache locality that can make a pretty big difference in performance.
+</p>
+        <h3 id="long_title"><a name="2_2">Linked-List</a></h3>
+        <p id="para">Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; <br>the elements are linked using pointers.</P>
+          <img src="list1.png" style="width:600px;">
+          <p id="para"><br><br>Why Linked List?
+<br>Arrays can be used to store linear data of similar types, but arrays have the following limitations.
+<br>1) The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.
+<br>2) Inserting a new element in an array of elements is expensive because the room has to be created for the new elements and to create room existing elements have to be shifted.
+<br><br>  For example, in a system, if we maintain a sorted list of IDs in an array id[].
+<br>  id[] = [1000, 1010, 1050, 2000, 2040].
+
+<br><br>  And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000).
+<br>  Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id[], everything after 1010 has to be moved.
+
+<br><br>  Advantages over arrays:
+<br>  1) Dynamic size
+<br>  2) Ease of insertion/deletion
+
+<br><br>  Drawbacks:
+<br>  1) Random access is not allowed. We have to access elements sequentially starting from the first node. So we cannot do binary search with linked lists efficiently with its default implementation. Read about it here.
+<br>  2) Extra memory space for a pointer is required with each element of the list.
+<br>  3) Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.
+
+<br><br>  Representation:
+<br>  A linked list is represented by a pointer to the first node of the linked list. The first node is called the head. If the linked list is empty, then the value of the head is NULL.
+<br><br>  Each node in a list consists of at least two parts:
+<br>  1) data
+<br>  2) Pointer (Or Reference) to the next node
+<br><br>  In C, we can represent a node using structures. Below is an example of a linked list node with integer data.
+<br>  In Java or C#, LinkedList can be represented as a class and a Node as a separate class. The LinkedList class contains a reference of Node class type.
+
+        </p>
+        <h3 id="long_title"><a name="2_3">Stack</a></h3>
+        <p id="para">Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+<br><br>Mainly the following three basic operations are performed in the stack:
+<br>
+1) Push<br>&nbsp;Adds an item in the stack. If the stack is full, then it is said to be an Overflow condition.
+<br>2) Pop<br>&nbsp;Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.
+<br>3) Peek or Top<br>&nbsp;Returns top element of stack.
+<br>4) isEmpty<br>&nbsp;Returns true if stack is empty, else false.</p>
+<img src="stack1.png" style="width:600px;">
+<p id="para"><br><br>How to understand a stack practically?
+<br>There are many real-life examples of a stack. Consider the simple example of plates stacked over one another in a canteen. The plate which is at the top is the first one to be removed, i.e. the plate which has been placed at the bottommost position remains in the stack for the longest period of time. So, it can be simply seen to follow LIFO/FILO order.
+
+<br><br>Time Complexities of operations on stack:
+<br>push(), pop(), isEmpty() and peek() all take O(1) time. <br>We do not run any loop in any of these operations.
+
+<br><br>Applications of stack:
+<br>1) Balancing of symbols
+<br>2) Infix to Postfix /Prefix conversion
+<br>3) Redo-undo features at many places like editors, photoshop.
+<br>4) Forward and backward feature in web browsers
+<br>5) Used in many algorithms like Tower of Hanoi, tree traversals, stock span problem, histogram problem.
+<br>6) Other applications can be Backtracking, Knight tour problem, rat in a maze, N queen problem and sudoku solver
+<br>7) In Graph Algorithms like Topological Sorting and Strongly Connected Components
+
+<br><br>Implementation:
+<br>- There are two ways to implement a stack:
+<br>1) Using array
+<br>2) Using linked list
+
+</p>
+
+      <h3 id="long_title"><a name="2_4">Queue</a></h3>
+      <p id="para">
+        &nbsp;A Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of a queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.</p>
+<img src="queue1.png" style="width:600px;">
+        <p id="para"><br><br>Operations on Queue:
+        <br>Mainly the following four basic operations are performed on queue:
+        <br>1) Enqueue<br>&nbsp;Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.
+        <br>2) Dequeue <br>&nbsp;Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.
+        <br>3) Front <br>&nbsp;Get the front item from queue.
+        <br>4) Rear <br>&nbsp;Get the last item from queue.
+
+        <br><br>Applications of Queue:
+        <br>Queue is used when things don’t have to be processed immediatly, but have to be processed in First InFirst Out order like Breadth First Search. This property of Queue makes it also useful in following kind of scenarios.
+
+        <br>1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
+        <br>2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.
+
+        <br><br>See this for more detailed applications of Queue and Stack.
+
+        <br>Array implementation Of Queue
+        <br>For implementing queue, we need to keep track of two indices, front and rear. We enqueue an item at the rear and dequeue an item from front. If we simply increment front and rear indices, then there may be problems, front may reach end of the array. The solution to this problem is to increase front and rear in circular manner (See this for details)
+
+        <br><br>Time Complexity: <br>- Time complexity of all operations like enqueue(), dequeue(), isFull(), isEmpty(), front() and rear() is O(1). <br>- There is no loop in any of the operations.
+       </p>
+
+<h3 id="long_title"><a name="2_5">Tree</a></h3>
+<p id="para">
+  Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures.
+<br><br>
+Tree Vocabulary <br>&nbsp;1) The topmost node is called root of the tree. <br>&nbsp;2) The elements that are directly under an element are called its children. <br>&nbsp;3) The element directly above something is called its parent. For example, ‘a’ is a child of ‘f’, and ‘f’ is the parent of ‘a’. <br>&nbsp;4) Finally, elements with no children are called leaves.
+<br><br>
+Why Trees?
+<br>&nbsp;1. One reason to use trees might be because you want to store information that naturally forms a hierarchy. For example, the file system on a computer:
+<br>&nbsp;2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).
+<br>&nbsp;3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists).
+<br>&nbsp;4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on number of nodes as nodes are linked using pointers.
+<br><br>
+Main applications of trees include:
+<br>&nbsp;1. Manipulate hierarchical data.
+<br>&nbsp;2. Make information easy to search (see tree traversal).
+<br>&nbsp;3. Manipulate sorted lists of data.
+<br>&nbsp;4. As a workflow for compositing digital images for visual effects.
+<br>&nbsp;5. Router algorithms
+<br>&nbsp;6. Form of a multi-stage decision-making (see business chess).
+<br><br>
+Binary Tree:
+<br>&nbsp;A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+<br><br>
+Binary Tree Representation in C
+<br>&nbsp;- A tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL.
+<br>A Tree node contains following parts.
+<br>&nbsp;1. Data
+<br>&nbsp;2. Pointer to left child
+<br>&nbsp;3. Pointer to right child
+<br><br>
+Properties of Binary Tree
+<br>&nbsp;1) The maximum number of nodes at level ‘l’ of a binary tree is 2l-1.
+Here level is number of nodes on path from root to the node (including root and node). Level of root is 1.
+This can be proved by induction.
+For root, l = 1, number of nodes = 21-1 = 1
+Assume that maximum number of nodes on level l is 2l-1
+Since in Binary tree every node has at most 2 children, next level would have twice nodes, i.e. 2 * 2l-1
+
+<br>&nbsp;2) Maximum number of nodes in a binary tree of height ‘h’ is 2h – 1.
+Here height of a tree is maximum number of nodes on root to leaf path. Height of a tree with single node is considered as 1.
+This result can be derived from point 2 above. A tree has maximum nodes if all levels have maximum nodes. So maximum number of nodes in a binary tree of height h is 1 + 2 + 4 + .. + 2h-1. This is a simple geometric series with h terms and sum of this series is 2h – 1.
+In some books, height of the root is considered as 0. In this convention, the above formula becomes 2h+1 – 1
+
+<br>&nbsp;3) In a Binary Tree with N nodes, minimum possible height or minimum number of levels is  ? Log2(N+1) ?
+This can be directly derived from point 2 above. If we consider the convention where height of a leaf node is considered as 0, then above formula for minimum possible height becomes   ? Log2(N+1) ? – 1
+
+<br>&nbsp;4) A Binary Tree with L leaves has at least   ? Log2L ? + 1   levels
+A Binary tree has maximum number of leaves (and minimum number of levels) when all levels are fully filled. Let all leaves be at level l, then below is true for number of leaves L.
+
+<br>&nbsp;5) In Binary tree where every node has 0 or 2 children, number of leaf nodes is always one more than nodes with two children.
+<br><br>
+Tree Traversals
+<br>Unlike linear data structures (Array, Linked List, Queues, Stacks, etc) which have only one logical way to traverse them, trees can be traversed in different ways.
+<br><br>Following are the generally used ways for traversing trees.</p>
+<img src="tree1.png" style="width:600px;">
+<p id="para"><br>Depth First Traversals:
+<br>1) Inorder (Left, Root, Right) : 4 2 5 1 3
+<br>2) Preorder (Root, Left, Right) : 1 2 4 5 3
+<br>3) Postorder (Left, Right, Root) : 4 5 2 3 1
+<br><br>Breadth First or Level Order Traversal : 1 2 3 4 5
+
+<br><br>
+Inorder Traversal (Practice):
+<br>
+Algorithm Inorder(tree)
+  <br>1. Traverse the left subtree, i.e., call Inorder(left-subtree)
+   <br>2. Visit the root.
+   <br>3. Traverse the right subtree, i.e., call Inorder(right-subtree)
+<br><br>Uses of Inorder
+<br>In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used.
+<br>Example: Inorder traversal for the above-given figure is 4 2 5 1 3.
+
+<br><br>
+Preorder Traversal (Practice):
+<br>
+Algorithm Preorder(tree)
+   <br>1. Visit the root.
+   <br>2. Traverse the left subtree, i.e., call Preorder(left-subtree)
+   <br>3. Traverse the right subtree, i.e., call Preorder(right-subtree)
+<br><br>Uses of Preorder
+<br>Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. Please see http://en.wikipedia.org/wiki/Polish_notation to know why prefix expressions are useful.
+<br>Example: Preorder traversal for the above given figure is 1 2 4 5 3.
+
+<br><br>
+Postorder Traversal (Practice):
+<br>
+Algorithm Postorder(tree)
+   <br>1. Traverse the left subtree, i.e., call Postorder(left-subtree)
+   <br>2. Traverse the right subtree, i.e., call Postorder(right-subtree)
+   <br>3. Visit the root.
+<br><br>Uses of Postorder
+<br>Postorder traversal is used to delete the tree. Please see the question for deletion of tree for details. Postorder traversal is also useful to get the postfix expression of an expression tree. Please see http://en.wikipedia.org/wiki/Reverse_Polish_notation to for the usage of postfix expression.
+<br>Example: Postorder traversal for the above given figure is 4 5 2 3 1.
+<br><br>
+Binary Search Tree
+<br>Binary Search Tree, is a node-based binary tree data structure which has the following properties:
+<br>1) The left subtree of a node contains only nodes with keys lesser than the node’s key.
+<br>2) The right subtree of a node contains only nodes with keys greater than the node’s key.
+<br>3) The left and right subtree each must also be a binary search tree.
+<br>4) There must be no duplicate nodes.</p>
+<img src="tree2.png" style="width:600px;">
+<p id="para"><br><br>The above properties of Binary Search Tree provide an ordering among keys so that the operations like search, minimum and maximum can be done fast. If there is no ordering, then we may have to compare every key to search a given key.
+<br><br>
+Searching a key
+<br>To search a given key in Binary Search Tree, we first compare it with root, if the key is present at root, we return root. If key is greater than root’s key, we recur for right subtree of root node. Otherwise we recur for left subtree.
+<br><br>struct node* search(struct node* root, int key)
+<br>{
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Base Cases: root is null or key is present at root
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (root == NULL || root->key == key)
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return root;
+
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Key is greater than root's key
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (root->key < key)
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   return search(root->right, key);
+
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Key is smaller than root's key
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return search(root->left, key);
+<br>}
+<br><br>
+Illustration to search 6 in below tree:
+<br>1. Start from root.
+<br>2. Compare the inserting element with root, if less than root, then recurse for left, else recurse for right.
+<br>3. If element to search is found anywhere, return true, else return false.</p>
+<img src="tree2.png" style="width:600px;">
+<p id="para"><br><br>
+Insertion of a key
+<br>A new key is always inserted at leaf. We start searching a key from root till we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node.
+
+<br><br>
+Illustration to insert 2 in below tree:
+<br>1. Start from root.
+<br>2. Compare the inserting element with root, if less than root, then recurse for left, else recurse for right.
+<br>3. After reaching end,just insert that node at left(if less than current) else right.</p>
+<img src="tree2.png" style="width:600px;">
+<p id="para"><br><br>
+Time Complexity: <br>The worst case time complexity of search and insert operations is O(h) where h is height of Binary Search Tree. In worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert operation may become O(n).
+<br><br>
+Some Interesting Facts:
+<br>1) Inorder traversal of BST always produces sorted output.
+<br>2) We can construct a BST with only Preorder or Postorder or Level Order traversal. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Note that we can always get inorder traversal by sorting the only given traversal.
+<br>3) Number of unique BSTs with n distinct keys is Catalan Number
+
+
+</p>
+
+<h3 id="long_title"><a name="2_6">Graph</a></h3>
+<p id="para">
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as,
+<br>A Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
+<img src="graph1.png" style="width:600px;">
+<br>In the above Graph, the set of vertices V = {0,1,2,3,4} and the set of edges E = {01, 12, 23, 34, 04, 14, 13}.
+<br><br>1) Graphs are used to solve many real-life problems.
+<br>2) Graphs are used to represent networks.
+<br>3) The networks may include paths in a city or telephone network or circuit network.
+<br>4) Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or &nbsp;&nbsp;node). Each node is a structure and contains information like person id, name, gender, locale etc.
+</p>
+<div id="done">
+<div style="height: 110px;"><img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/16/47/164713b49759d69dc478c0816e8fb880a5ee67172f2ddcd9fad4ff579a95c271_v1.jpg" width="100" height="100" style="width:100px;"></div>
+<div style="height: 110px;"><p id="intro"><br> If you understand the above contents, press 'red' button <br>and if you don't, press 'blue' button.</p></div>
+<div style="height: 110px;"><canvas id="demoCanvas" width="200" height="200">
+  alternate content
+</canvas></div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>

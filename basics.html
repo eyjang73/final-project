@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Data Structure</title>
+    <meta charset="utp-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="duck.png">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Titillium+Web|Bree+Serif|Dosis|Jaldi|Fredoka+One|Indie+Flower|Neucha|Ruda|Sanchez|Unica+One&display=swap" rel="stylesheet">
+<!-- circle button -->
+    <link href="../_shared/demo.css" rel="stylesheet" type="text/css">
+  	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script>
+      function init() {
+        var stage = new createjs.Stage("demoCanvas");
+
+        var circle1 = new createjs.Shape();
+        circle1.graphics.beginFill("red").drawCircle(0, -30, 10);
+        circle1.x = 100;
+        circle1.y = 100;
+
+        circle1.on("click", function() {
+          alert("Good~ Keep going!");
+        });
+
+        var circle2 = new createjs.Shape();
+        circle2.graphics.beginFill("blue").drawCircle(30, -30, 10);
+        circle2.x = 100;
+        circle2.y = 100;
+
+        circle2.on("click", function() {
+          alert("Try again!");
+        });
+
+        stage.addChild(circle1);
+        stage.addChild(circle2);
+        stage.update();
+      }
+    </script>
+    <!-- circle button -->
+  </head>
+  <body onload="init();">
+
+    <div id="grid">
+      <div id="side">
+        <!-- music -->
+        <audio autoplay controls> <source src="music.mp3" type="audio/mp3"> </audio>
+        <!-- music -->
+        <h5 id="side_title">Contents</h5>
+        <h3><a id="above_line_space" href="basics.html">1. Basics</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar"><a href="#1_1">What is Data Structure?</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_2">Characteristics of Data Structure</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_3">Why do we need Data Structure?</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_4">Classification of Data Structure</a></h4>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="types.html">2. Types</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar">Array</p>
+        <div id="line"></div>
+        <p id="mar">Linked-List</p>
+        <div id="line"></div>
+        <p id="mar">Stack</p>
+        <div id="line"></div>
+        <p id="mar">Queue</p>
+        <div id="line"></div>
+        <p id="mar">Tree</p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Tree</p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Search Tree</p>
+        <div id="line"></div>
+        <p id="mar">Graph</p>
+        <div id="line"></div>
+      </h4>
+        <h3><a id="above_line_space" href="utilization.html">3. Utilization</a></h3>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="quiz.html">4. Quiz</a></h3>
+        <div id="line"></div>
+        <h5 id="side_title2">Contact</h5>
+        <div id="cry">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/71/d8/71d803fcaf5188b067e8bb0213376deed02a9515db1d90e19ce80049fa6e2add_v1.jpg" width="100" height="100" style="width:100px;">
+        </div>
+        <div>
+        <p id="intro">"Ogu !!! <br>I have some questions.<br> But how can I ask it?""</p>
+        </div>
+        </div>
+        <p id="intro">Don't worry. I'll provide you the<br> way you can contact me.</p>
+        <div id="information">
+        <p id="infor">TEL1. 010-5837-5566</p>
+        <p id="infor">TEL2. 02-3436-1445</p>
+        <p id="infor">e-mail. neonjinny@naver.com</p>
+        <p id="infor">kakao-talk. neonjinny</p>
+        </div>
+        <img id="shutter" src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/2f/25/2f2581483293c71e7d689e51cf0d893c5bfd392c64b27ec9615406896811a349_v1.jpg" width="350" height="350" style="width:350px;">
+      </div>
+      <div id="right_part">
+        <h4 id="orange_line">Multimedia for Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
+
+<button class="hbutton" onclick="location.href='main.html'">home</button>
+</h4>
+        <h2 id="subpage_title">1. Basics</h2>
+        <div id="grid_char">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/25/8a/258afec846d75460557e53f6ee64ed0c742f2d20fde8c9331c80ef4b84f8443c_v1.jpg" width="300" height="300" style="width:300px;">
+        </div>
+        <div>
+          <h3 id="say"> Hey~~ Do you know me?<br>
+          I'm Ogu. ( Ori + Neoguri )<br>
+          You will learn about BASICS of Data Structure in this page.<br>
+          BASICS are always important.
+          <br>I hope you enjoy it!
+          <br>Hoo~~</h3>
+        </div>
+        </div>
+        <h3 id="long_title"><a name="1_1">What is Data Structure?</a></h3>
+        <p id="para">A data structure is a specialized format for organizing, processing, retrieving and storing data. While there are several basic and advanced structure types, any data structure is designed to arrange data to suit a specific purpose so that it can be accessed and worked with in appropriate ways. In computer programming, a data structure may be selected or designed to store data for the purpose of working on it with various algorithms. Each data structure contains information about the data values, relationships between the data and functions that can be applied to the data.</p>
+
+        <h3 id="long_title"><a name="1_2">Characteristics of Data Structure</a></h3>
+        <p id="para">Data structures are often classified by their characteristics.
+          <br><br> Possible characteristics are:
+        <br>1) Linear or non-linear <br>&nbsp;This characteristic describes whether the data items are arranged in chronological
+        sequence, such as with an array, or in an unordered sequence, such as with a graph.
+        <br>2) Homogeneous or non-homogeneous<br>&nbsp;This characteristic describes whether all data items in a given
+        repository are of the same type or of various types.
+        <br>3) Static or dynamic<br>&nbsp;This characteristic describes how the data structures are compiled.
+        Static data structures have fixed sizes, structures and memory locations at compile time.
+        Dynamic data structures have sizes, structures and memory locations that can shrink or expand depending on
+        the use.</p>
+        <h3 id="long_title"><a name="1_3">Why do we need Data Structure?</a></h3>
+        <div id="long_img">
+        <div><img id="com" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" width="350" style="width: 450px;"></div>
+        <div><p id="para"><br>In general, data structures are used to implement the physical forms of abstract data types. This can be
+          translated into a variety of applications, such as displaying a relational database as a binary tree.
+
+In programming languages, data structures are used to organize code and information in a digital space.
+For example, Python lists and dictionaries or JavaScript array and objects are common coding structures used for storing
+and retrieving information. Data structures are also a crucial part of designing efficient software.
+
+Data structures are essential for managing large amounts of data, such as information kept in databases or
+indexing services, efficiently. Proper maintenance of data systems requires the identification of memory allocation,
+data interrelationships and data processes, all of which data structures help with.
+
+Additionally, it is not only important to use data structures but it is important to choose the proper data structure
+for each task. Choosing an ill-suited data structure could result in slow runtimes or unresponsive code.
+A few factors to consider when picking a data structure include what kind of information will be stored,
+where should existing data be placed, how should data be sorted and how much memory should be reserved for the data.</p></div>
+</div>
+      <h3 id="long_title"><a name="1_4">Classification of Data Structure</a></h3>
+      <img src="https://cdn.ttgtmedia.com/rms/onlineimages/whatis-data_structure.png" style="width: 1100px;">
+      <p id="para">Data structure types are determined by what types of operations are required or what kinds of algorithms are going to be applied.<br><br> These types include:
+
+<br>1) Arrays<br>  &nbsp;An array stores a collection of items at adjoining memory locations. Items that are the same type get stored together so that the position of each element can be calculated or retrieved easily. Arrays can be fixed or flexible in length.
+<br>2) Stacks<br>  &nbsp;A stack stores a collection of items in the linear order that operations are applied. This order could be last in first out (LIFO) or first in first out (FIFO).
+<br>3) Queues<br>  &nbsp;A queue stores a collection of items similar to a stack; however, the operation order can only be first in first out.
+<br>4) Linked lists<br>  &nbsp;A linked list stores a collection of items in a linear order. Each element, or node, in a linked list contains a data item as well as a reference, or link, to the next item in the list.
+<br>5) Trees<br>  &nbsp;A tree stores a collection of items in an abstract, hierarchical way. Each node is linked to other nodes and can have multiple sub-values, also known as children.
+<br>6) Graphs<br>  &nbsp;A graph stores a collection of items in a non-linear fashion. Graphs are made up of a finite set of nodes, also known as vertices, and lines that connect them, also known as edges. These are useful for representing real-life systems such as computer networks.
+<br>7) Tries<br>  &nbsp;A trie, or keyword tree, is a data structure that stores strings as data items that can be organized in a visual graph.
+<br>8) Hash tables<br>  &nbsp;A hash table, or a hash map, stores a collection of items in an associative array that plots keys to values. A hash table uses a hash function to convert an index into an array of buckets that contain the desired data item.
+<br><br>These are considered complex data structures as they can store large amounts of interconnected data. Examples of primitive, or basic, data structures are integers, floats, Booleans and characters. </p>
+<div id="done">
+<div style="height: 110px;"><img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/16/47/164713b49759d69dc478c0816e8fb880a5ee67172f2ddcd9fad4ff579a95c271_v1.jpg" width="100" height="100" style="width:100px;"></div>
+<div style="height: 110px;"><p id="intro"><br> If you understand the above contents, press 'red' button <br>and if you don't, press 'blue' button.</p></div>
+<div style="height: 110px;"><canvas id="demoCanvas" width="200" height="200">
+  alternate content
+</canvas></div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>

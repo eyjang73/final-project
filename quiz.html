@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>http://www.blueb.co.kr</title>
+    <meta charset="utp-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="duck.png">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Titillium+Web|Bree+Serif|Dosis|Jaldi|Fredoka+One|Indie+Flower|Neucha|Ruda|Sanchez|Unica+One&display=swap" rel="stylesheet">
+    <!-- circle button -->
+        <link href="../_shared/demo.css" rel="stylesheet" type="text/css">
+      	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+        <script>
+          function init() {
+            var stage = new createjs.Stage("demoCanvas");
+
+            var circle1 = new createjs.Shape();
+            circle1.graphics.beginFill("red").drawCircle(0, 0, 10);
+            circle1.x = 100;
+            circle1.y = 100;
+
+            circle1.on("click", function() {
+              alert("Good~ Keep going!");
+            });
+
+            var circle2 = new createjs.Shape();
+            circle2.graphics.beginFill("blue").drawCircle(30, 0, 10);
+            circle2.x = 100;
+            circle2.y = 100;
+
+            circle2.on("click", function() {
+              alert("Try again!");
+            });
+
+            stage.addChild(circle1);
+            stage.addChild(circle2);
+            stage.update();
+          }
+        </script>
+        <!-- circle button -->
+        <!--quiz-->
+        <script language="javascript">
+        var delay=10; //시간설정
+        var correctAnswers=new Array("c","b","d","a","c");  //정답
+
+        var q_num=1;
+        var timer;
+        var layer;
+        var clock=delay;
+        var score=0;
+
+        function show_question(){
+        	if (layer=eval("document.all.question"+q_num)){
+        		layer.style.display="inline";
+        		document.all.timeLeft.innerHTML=clock;
+        		hide_question();
+        	} else {
+        		document.all.timeLeft.innerHTML=0;
+        		document.all.quizScore.innerHTML="Your score is "+score+"/"+(q_num-1)+".";
+        		document.all.quizScore.style.display="inline";
+        	}
+        }
+
+        function hide_question(){
+        	if (clock>0) {
+        		document.all.timeLeft.innerHTML=clock;
+        		clock--;
+        		timer=setTimeout("hide_question()",1000);
+        	} else {
+        		clearTimeout(timer);
+        		document.all.answerBoard.innerHTML=" ";
+        		clock=delay;
+        		layer.style.display="none";
+        		q_num++;
+        		show_question();
+        	}
+        }
+
+        function check_answer(answer){
+        	if (correctAnswers[q_num-1]==answer){
+        		score++;
+        		document.all.answerBoard.innerHTML="<font color=blue><b>Correct answer!</b></font>";
+        	} else {
+        		document.all.answerBoard.innerHTML="<font color=red><b>Wrong answer!</b></font>";
+        	}
+        	clock=0;
+        	clearTimeout(timer);
+        	timer=setTimeout("hide_question()",700);
+        }
+
+        window.onload=show_question;
+        </script>
+        <!--quiz-->
+  </head>
+  <body>
+
+    <div id="grid">
+      <div id="side">
+        <!-- music -->
+        <audio autoplay controls> <source src="music.mp3" type="audio/mp3"> </audio>
+        <!-- music -->
+        <h5 id="side_title">Contents</h5>
+        <h3><a id="above_line_space" href="basics.html">1. Basics</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar"><a href="#1_1">What is Data Structure?</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_2">Characteristics of Data Structure</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_3">Why do we need Data Structure?</a></p>
+        <div id="line"></div>
+        <p id="mar"><a href="#1_4">Classification of Data Structure</a></h4>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="types.html">2. Types</a></h3>
+        <div id="line"></div>
+        <h4>
+        <p id="mar">Array</p>
+        <div id="line"></div>
+        <p id="mar">Linked-List</p>
+        <div id="line"></div>
+        <p id="mar">Stack</p>
+        <div id="line"></div>
+        <p id="mar">Queue</p>
+        <div id="line"></div>
+        <p id="mar">Tree</p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Tree</p>
+        <div id="line"></div>
+        <p id="mar_">-Binary Search Tree</p>
+        <div id="line"></div>
+        <p id="mar">Graph</p>
+        <div id="line"></div>
+      </h4>
+        <h3><a id="above_line_space" href="utilization.html">3. Utilization</a></h3>
+        <div id="line"></div>
+        <h3><a id="above_line_space" href="quiz.html">4. Quiz</a></h3>
+        <div id="line"></div>
+        <h5 id="side_title2">Contact</h5>
+        <div id="cry">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/71/d8/71d803fcaf5188b067e8bb0213376deed02a9515db1d90e19ce80049fa6e2add_v1.jpg" width="100" height="100" style="width:100px;">
+        </div>
+        <div>
+        <p id="intro">"Ogu !!! <br>I have some questions.<br> But how can I ask it?""</p>
+        </div>
+        </div>
+        <p id="intro">Don't worry. I'll provide you the<br> way you can contact me.</p>
+        <div id="information">
+        <p id="infor">TEL1. 010-5837-5566</p>
+        <p id="infor">TEL2. 02-3436-1445</p>
+        <p id="infor">e-mail. neonjinny@naver.com</p>
+        <p id="infor">kakao-talk. neonjinny</p>
+        </div>
+        <img id="shutter" src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/2f/25/2f2581483293c71e7d689e51cf0d893c5bfd392c64b27ec9615406896811a349_v1.jpg" width="350" height="350" style="width:350px;">
+      </div>
+      <div id="right_part">
+        <h4 id="orange_line">Multimedia for Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
+
+<button class="hbutton" onclick="location.href='main.html'">home</button>
+</h4>
+        <h2 id="subpage_title">4. Quiz</h2>
+        <div id="grid_char">
+        <div>
+        <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/d6/3f/d63fc54819cd3fb0c319021e2e7cd6bfee951e8ce2db9e948bd828f538272da6_v1.jpg" width="300" height="300" style="width:300px;">
+        </div>
+        <div>
+          <h3 id="say"> Hello!! <br> It's quiz time~~
+          <br>Show off your knowledge!<br>
+          Let's get in~
+          </h3>
+        </div>
+        </div>
+        <h3 id="long_title"><a name="1_1">You have 5 questions. </a></h3>
+        time-limit : <B><span id="timeLeft"></span></B> seconds<br>
+        <br>
+        <div id="answerBoard"> </div>
+        <br>
+
+        <div id="question1" style="display:none">
+        	<b>Q1. Which of the following is linear-structure?</b><br>
+        	<a href="javascript:void(0)" onclick="check_answer('a')">a) float</a><br>
+        	<a href="javascript:void(0)" onclick="check_answer('b')">b) Graph</a><br>
+        	<a href="javascript:void(0)" onclick="check_answer('c')">c) linked-list</a><br>
+        	<a href="javascript:void(0)" onclick="check_answer('d')">d) directory</a><br>
+        </div>
+
+        <div id="question2" style="display:none">
+        <b>Q2. Which of the following is a function of stack?</b><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">a) euqueue</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">b) pop</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">c) dequeue</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">d) pre-traverse</a><br>
+        </div>
+
+        <div id="question3" style="display:none">
+        <b>Q3. Which of the following is the most correct answer for the reason we need data structure?</b><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">a) to make web site</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">b) to be good at computer language</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">c) to play computer game</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">d) to implement the physical forms of abstract data types</a><br>
+        </div>
+
+        <div id="question4" style="display:none">
+        <b>Q4. Which of the following is not a traverse of tree?</b><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">a) nextorder-traverse</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">b) preorder-traverse</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">c) inorder-traverse</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">d) postorder-traverse</a><br>
+        </div>
+
+        <div id="question5" style="display:none">
+        <b>Q5. FUNNY QUESTION) What is the character of this web site?</b><br>
+        <a href="javascript:void(0)" onclick="check_answer('a')">a) Uga</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('b')">b) Agu</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('c')">c) Ogu</a><br>
+        <a href="javascript:void(0)" onclick="check_answer('d')">d) Ugo</a><br>
+        </div>
+
+        <div id="quizScore" style="display:none">
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
